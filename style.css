@@ -22,7 +22,7 @@ html, body {
   color:white;
 }
 
-body{
+body.homepage{
   background-image:url(/img/bg.jpg);
   background-repeat: no-repeat;
   background-size:cover;
@@ -50,4 +50,99 @@ button{
 button:hover{
   background: white;
   color:blueviolet;
+}
+
+
+
+/* chat page */
+
+.member-area{
+  position: fixed;
+  top :0;
+  bottom :0;
+  left:0;
+  width:30%;
+  background-color: navy;
+  color:white;
+}
+
+
+.user-info{
+  background: white;
+  color : black;
+  padding: 10px;
+}
+
+.logout{
+  float: right;
+}
+
+.member {
+  padding: 10px;
+  border-bottom: 1px solid white;
+  color: white;
+
+}
+
+.member:hover{
+  background: black;
+  color: blue;
+}
+
+.messege-area{
+  background: azure;
+  position: fixed;
+  left : 30%;
+  top: 0;
+  bottom : 0;
+  width: 70%;
+}
+
+.chat-info{
+  background-color: white;
+  padding : 10px;
+  color : black;
+}
+
+.member.active{
+  font-weight: bold;
+  background-color: black;
+  color:blue;
+
+}
+
+.messages{
+  background: lightblue;
+  height: 100%;
+  padding : 10px;
+  overflow: scroll;
+
+
+}
+.message{
+  background:white;
+  padding :10px;
+  margin-bottom:10px;
+}
+
+.message.by-user{
+  background: darkgray;
+}
+
+.chat-form{
+  position: fixed;
+  left:30%;
+  bottom:0;
+  width:70%;
+  background: white;
+  padding: 20px;
+}
+
+.chat-message{
+  padding: 10px;
+  border:  1px soild darkgrey;
+  border-radius: 4px;
+  display: block;
+
+
 }
