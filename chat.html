@@ -15,112 +15,49 @@
 <body>
   <div class="member-area">
     <div class="user-info">
-      Jay shah
-      <span class="logout"> Log out </span>
+    <span id="username" > </span>
+       <span class="logout"> Log out </span>
     </div>
-        <div class="members">
-          <div class="member active">
-             Pragna
-          </div>
-          <div class="member">
-             Gopal
-          </div>
-          <div class="member">
-             Punit
-          </div>
-          <div class="member">
-             Sural
-          </div>
+        <div class="members" id="members">
+
         </div>
     </div>
   </div>
 
-  <div class="messege-area">
-    <div class="chat-info">
-      pragna
-    </div>
-    <div class="messages">
-      <div class="message">
-        hey mum
-      </div>
-      <div class="message by-user">
-        what suup?
-      </div>
-      <div class="message">
-        how is going on ?
-      </div>
-      <div class="message">
-        hey mum
-      </div>
-      <div class="message by-user">
-        what suup?
-      </div>
-      <div class="message">
-        how is going on ?
-      </div>
-      <div class="message">
-        hey mum
-      </div>
-      <div class="message by-user">
-        what suup?
-      </div>
-      <div class="message">
-        how is going on ?
-      </div>
-      <div class="message">
-        hey mum
-      </div>
-      <div class="message by-user">
-        what suup?
-      </div>
-      <div class="message">
-        how is going on ?
-      </div>
-      <div class="message">
-        hey mum
-      </div>
-      <div class="message by-user">
-        what suup?
-      </div>
-      <div class="message">
-        how is going on ?
-      </div>
-      <div class="message">
-        hey mum
-      </div>
-      <div class="message by-user">
-        what suup?
-      </div>
-      <div class="message">
-        how is going on ?
-      </div>
-      <div class="message">
-        hey mum
-      </div>
-      <div class="message by-user">
-        what suup?
-      </div>
-      <div class="message">
-        how is going on ?
-      </div>
-      <div class="message">
-        hey mum
-      </div>
-      <div class="message by-user">
-        what suup?
-      </div>
-      <div class="message">
-        how is going on ?
-      </div>
-  
-    </div>
 
+  <div class="messege-area">
+    <div id="messages" class="messages">
+
+    </div>
+</div>
     <div class="chat-form">
-      <input type="text" class="chat-message" placeholder="Write your Message and press enter"/>
+      <input type="hidden" id="chat-id" />
+      <input id="message-text" type="text" class="chat-message" placeholder="Write your Message and press enter"/>
+      <button id="send-button"> Send </button>
     </div>
 
 
   </div>
+
+  <script src="https://www.gstatic.com/firebasejs/3.6.7/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyB68NGQnlJsgX1-rrf6Ntk5XKQbfPt7Fa8",
+      authDomain: "snapychat-c1bcf.firebaseapp.com",
+      databaseURL: "https://snapychat-c1bcf.firebaseio.com",
+      storageBucket: "snapychat-c1bcf.appspot.com",
+      messagingSenderId: "702500895023"
+    };
+    firebase.initializeApp(config);
+  </script>
+
+  <script type="text/javascript" src="function.js"> </script>
+  <script type="text/javascript" src="app.js"> </script>
+  <script type="text/javascript" src="chat.js"> </script>
+
+
+
 </body>
 
 </html>

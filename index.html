@@ -10,15 +10,34 @@
     <!-- ROBOTO Font its google font -->
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
+
 </head>
 
 <body class="homepage">
   <div class="main">
     <h1 class="logo">Snappy</h1>
     <p class="tag line">An instnant chat platform.</p>
-    <button> Sign in With Google </button>
+    <button id="signin-button"> Sign in With Google </button>
 
   </div>
+
+
+<script src="https://www.gstatic.com/firebasejs/3.6.7/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyB68NGQnlJsgX1-rrf6Ntk5XKQbfPt7Fa8",
+    authDomain: "snapychat-c1bcf.firebaseapp.com",
+    databaseURL: "https://snapychat-c1bcf.firebaseio.com",
+    storageBucket: "snapychat-c1bcf.appspot.com",
+    messagingSenderId: "702500895023"
+  };
+  firebase.initializeApp(config);
+</script>
+
+<script type="text/javascript" src="function.js"> </script>
+<script type="text/javascript" src="app.js"> </script>
+
 </body>
 
 </html>
